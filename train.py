@@ -15,10 +15,10 @@ from sklearn.metrics import confusion_matrix
 # Configuration
 # ==========================
 DATA_DIR = "data/train/"
-BATCH_SIZE = 32
+BATCH_SIZE = 16
 NUM_CLASSES = 10
 EPOCHS = 3
-LR = 1e-3
+LR = 2e-3
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # ==========================

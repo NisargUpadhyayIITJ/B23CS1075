@@ -18,7 +18,7 @@ from PIL import Image
 # Config
 # ==========================
 DATA_DIR = "data/test/"
-MODEL_PATH = "trained_model.pth"
+MODEL_PATH = "setB.pth"
 BATCH_SIZE = 32
 NUM_CLASSES = 10
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -126,5 +126,6 @@ def predict_single_image(image_path):
     print(f"Confidence: {confidence.item()*100:.2f}%")
 
 # Pick random image from dataset
-random_image_path, _ = random.choice(dataset.samples)
+# random_image_path, _ = random.choice(dataset.samples)
+random_image_path = "data/test/7/6561.png"
 predict_single_image(random_image_path)

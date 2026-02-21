@@ -2,3 +2,5 @@ Pillow
 scikit_learn
 torch
 torchvision
+matplotlib
+seaborn

@@ -18,7 +18,7 @@ from PIL import Image
 # Config
 # ==========================
 DATA_DIR = "data/test/"
-MODEL_PATH = "setB.pth"
+MODEL_PATH = "trained_model.pth"
 BATCH_SIZE = 32
 NUM_CLASSES = 10
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
